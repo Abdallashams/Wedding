@@ -1,0 +1,73 @@
+
+
+.flower-pillar img {
+
+  height: auto;
+  display: block;
+  object-fit: contain;
+
+  /* ظل خفيف */
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.25));
+
+  /* حركة بسيطة */
+  transition: transform 0.4s ease;
+}
+
+.flower-pillar img:hover {
+  transform: scale(1.03);
+}
+
+.flower-pillar {
+  position: absolute;   /* بدل fixed */
+  bottom: 0;
+  left: 25%;
+  z-index: 10;
+  pointer-events: none;
+  top: 65%;
+  width: 700px;
+}
+
+@media (max-width: 992px) {
+  .flower-pillar {
+    position: absolute;  /* بدل fixed */
+    bottom: 0;
+    left: 15%;
+    z-index: 10;
+    pointer-events: none;
+    top: 63%;
+    width: 400px;
+  }
+
+
+/* نفس التعديل في باقي الـ media queries */
+  }
+
+
+/* موبايل */
+@media (max-width: 768px) {
+  .flower-pillar {
+      position: absolute;
+    bottom: 0;
+    left: 15%;
+    z-index: 10;
+    pointer-events: none;
+    top: 63%;
+    width: 400px;
+
+}
+}
+
+/* موبايلات صغيرة */
+@media (max-width: 480px) {
+    .flower-pillar {
+        position: absolute;
+        bottom: 0;
+        left: 3%;
+        z-index: 10;
+        pointer-events: none;
+        top: 38%;
+        width: 400px;
+}
+}
+
+

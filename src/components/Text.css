@@ -1,0 +1,74 @@
+.Names {
+  font-family: "Great Vibes", cursive;
+  color: rgb(86, 163, 153);
+  font-size: 50px;
+    position: absolute;
+      font-size: 10vw;
+    top: 12%;
+    left: 23%;
+    z-index: 9999;
+    opacity: 1;
+    transform: translateY(50px);
+}
+
+body {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.desc {
+  font-family: "Great Vibes", cursive;
+  color: rgb(86, 163, 153);
+
+  /* حجم خط مرن */
+      font-size: clamp(20px, 3vw, 31px);
+
+  position: absolute;
+
+  /* مكان مرن */
+    top: 34%;
+    left: 39%;
+
+  z-index: 9999;
+  opacity: 1;
+  transform: translateY(50px);
+}
+
+
+
+
+@media (max-width: 992px) {
+  .desc {
+        font-size: 52px;
+        top: 14%;
+        left: 25%;
+  }
+  .Names{
+        top: 12%;
+        left: 20%;
+  }
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+  .desc {
+    font-size: 30px;
+    top: 20%;
+    left: 30%;
+  }
+}
+
+/* موبايلات صغيرة */
+@media (max-width: 480px) {
+  .desc {
+        font-size: 33px;
+           top: 15%;
+
+        left: 16%;
+  }
+  .Names {
+
+        font-size: 33px;
+        top: 9%;
+        left: 26%;
+  }
+}

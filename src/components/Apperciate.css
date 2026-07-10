@@ -1,0 +1,58 @@
+
+#car {
+position: absolute;
+    position: absolute;
+    left: 45%;
+    width: 32%;
+    top: 57%;
+    bottom: 20%;
+    transform: rotate(1deg) translateX(2%);
+  }
+
+  .move {
+    animation: move 8s ease-in-out both;
+  }
+
+  @keyframes move {
+    0%   { transform: translate(0,0) scale(1); }
+    100% { transform: translate(10vw,-5vh) scale(.6); }
+  }
+
+  @media (max-width: 992px) {
+
+#car {
+    position: absolute;
+    left: 55%;
+    width: 35%;
+    top: auto;
+    bottom: 20%;
+    transform: rotate(1deg) translateX(2%);
+  }
+
+
+  }
+
+
+/* موبايل */
+@media (max-width: 768px) {
+#car {
+        position: absolute;
+        left: 58%;
+        width: 35%;
+        top: auto;
+        bottom: 13%;
+    transform: rotate(1deg) translateX(2%);
+  }
+}
+
+/* موبايلات صغيرة */
+@media (max-width: 480px) {
+#car {
+        position: absolute;
+        left: 56%;
+        width: 35%;
+        top: 63%;
+        bottom: 13%;
+    transform: rotate(1deg) translateX(2%);
+  }
+}
