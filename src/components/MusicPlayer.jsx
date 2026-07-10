@@ -26,9 +26,12 @@ const MusicPlayer = forwardRef((props, ref) => {
 
   return (
     <>
-      <audio ref={audioRef} loop>
-        <source src="/weddingMusic.m4a" ype="audio/mp4" />
-      </audio>
+      <audio
+        ref={audioRef}
+        src="/weddingMusic.mp3"
+        loop
+        preload="auto"
+      />
 
       <button
         onClick={toggleMusic}
